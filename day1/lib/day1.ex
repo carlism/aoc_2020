@@ -1,11 +1,17 @@
 defmodule Day1 do
+  @moduledoc """
+  Day1 fix my expense reports.
+  """
+
   def part1() do
     {x, y} =
       Day1.read_numbers("input.txt")
       |> Day1.all_pairs()
       |> Day1.find_sum(2020)
 
-    IO.inspect({x, y, x * y})
+    IO.puts(x)
+    IO.puts(y)
+    IO.puts(x * y)
   end
 
   def part2() do
@@ -14,7 +20,10 @@ defmodule Day1 do
       |> Day1.all_trios()
       |> Day1.find_sum(2020)
 
-    IO.inspect({x, y, z, x * y * z})
+    IO.puts(x)
+    IO.puts(y)
+    IO.puts(z)
+    IO.puts(x * y * z)
   end
 
   def read_lines(file_name) do
