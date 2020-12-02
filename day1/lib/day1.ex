@@ -3,7 +3,7 @@ defmodule Day1 do
   Day1 fix my expense reports.
   """
 
-  def part1() do
+  def part1 do
     {x, y} =
       Day1.read_numbers("input.txt")
       |> Day1.all_pairs()
@@ -14,7 +14,7 @@ defmodule Day1 do
     IO.puts(x * y)
   end
 
-  def part2() do
+  def part2 do
     {x, y, z} =
       Day1.read_numbers("input.txt")
       |> Day1.all_trios()
